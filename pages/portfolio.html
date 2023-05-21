@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Sirtori Portfolio</title>
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Didact+Gothic&family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="grid-index"> <!-- GRID: HEADER / MAIN / FOOTER -->
+
+<!-- ************************** HEADER N/I ************************** -->
+<header class="header bcolgn"><!-- GRID: LOGO / MENU / 2 sin uso / BORDE -->
+    <nav class="header__nav"> <!-- MENU - FLEX -->
+        <ul class="header__ul-list">
+            <li><a class="header__a-enlace coln1" href="../index.html">Inicio</a></li>
+            <li><a class="header__a-enlace coln1" href="./services.html">Servicios</a></li>
+            <li><a class="header__a-enlace coln1" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="header__a-enlace coln1" href="./about_me.html">Sobre mi</a></li>
+            <li><a class="header__a-enlace coln1" href="./contact_me.html">Escribeme</a></li>
+        </ul>
+    </nav>
+    <div class="header__logo"><!-- con link a index -->
+        <a href="../index.html">
+            <img class="w100" src="../img/LogoB.png" alt="logo">
+        </a>
+    </div>
+    <div class="header__bordehed h100"></div><!-- borde inferior -->
+</header>
+
+<!-- ************************** MAIN ************************** -->
+<main class="fx-main"><!-- Apertura + Servicios + form -->
+
+    <section class="fx-vert fx-vert--cent w80 mv25"> <!-- Titulo + descripcion -->
+        <h1 class="fx-vert fx-vert--cent__1-titulo colv4">Mi Portfolio</h1>
+        <p class="fx-vert__p-txt-g">Mi trabajo toca un área muy particular, es "algo" que, a los que trabajan con eso, les encanta pero, como no es un bien material, les es difícil determinar su valor. Sin embargo, están muy agradecidos porque les ahorra <strong>TIEMPO</strong>.</p>
+        <p class="fx-vert__p-txt-g">Agradecería que cuando veas mis productos, utilices ese valor, tiempo, por ejemplo 1 hora, y dale el valor de cuánto cuesta esa hora de trabajo y multiplícalo por todo el tiempo que ganan con eso.</p>
+        <p class="fx-vert__p-txt-g"><em>Como los datos pueden llegar a ser muy sensibles para cada empresa me llevará un tiempo adaptar cada uno de ellos para poder mostrarlos.</em></p>
+        <p class="fx-vert__p-txt-g"></p>
+        <p class="fx-vert__p-txt-g">Es importante entender que una solución para una empresa no puede necesariamente ser la solución para la tuya. Siempre hay que tomar en cuenta los objetivos que buscas.</p>
+        <div class="programas">  <!-- Logos programas ... -->
+            <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+            <img class="programas__i-logo" src="../img/iconos/Access.png" alt="icono access">
+            <img class="programas__i-logo" src="../img/iconos/power_bi.png" alt="icono Power Bi">
+            <img class="programas__i-logo" src="../img/iconos/google_sheets.png" alt="icono google sheets">
+            <img class="programas__i-logo" src="../img/iconos/looker_studio.png" alt="icono Lokker Studio">
+            <img class="programas__i-logo" src="../img/iconos/tableau.png" alt="icono tableau">
+        </div>
+    </section>
+
+    <section class="txt-centrado w80 mv30"> <!-- subtitulo  -->
+        <h2>Alguno de mis desarrollos</h2>
+    </section>
+
+<!-- ************************** BOOTSTRAP ACORDEON ************************** -->
+    <div class="accordion w80 mv00" id="accordionExample">
+        <div class="accordion-item"><!-- NW - Picking -->
+            <h3 class="accordion-header">
+            <button class="accordion-button text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                2022 a 2023 - Sistema de control Logistico Interno - Grupo Newsport
+            </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/power_bi.png" alt="icono Power Bi">
+                        <img class="programas__i-logo" src="../img/iconos/google_sheets.png" alt="icono google sheets">
+                        <img class="programas__i-logo" src="../img/iconos/looker_studio.png" alt="icono Lokker Studio">
+                    </div>
+                    <p><strong>Esta es mi joya actual.</strong> Es un grupo de planillas desarrolladas junto a la encargada del sector.</p>
+                    <p>Cuando me toco asistir a este sector, era una tarea tediosa que se hacía por mail. Tomamos la tarea y la llevavamos a planillas de Google Sheets donde conecté sus usuarios que interactúan continuamente con la misma y que la hicieron evolucionar hasta el punto actual, donde 15 meses después de su origen, por su complejidad ya es necesario su paso a un sistema.</p>
+                    <p>Consta de 1 tabla principal con 10 hojas, una tabla secundaria de 12 hojas y al menos 35 planillas auxiliares con 3, o más hojas, <strong>todas interrelacionadas</strong>. 50 usuarios y aproximadamente 8 mil operaciones x mes.</p>
+                    <p>El proceso gestiona el pedido de artículos a los locales (aprox 30), que transfieren la mercadería al depósito central y luego se envía al cliente. Sistema “Crossdock”</p>
+                    <p>Entre sus valores agregados esta: control de pedidos de Mercado Libre, control de envíos de mercadería, retiros seguimiento de paquetes en sentido inverso, devoluciones, links de pago, control de fraude, lista roja, gestión de faltantes de stock, gestión de problemas de stock, cambios y post venta.</p>
+                    <p><em>Adicionalmente, sobre este grupo de planillas se originan informes en Looker y Power Bi</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- ID - graf -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2023 - Planilla de control de producción y generación de remito - Idearte S.A.
+            </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                    </div>
+                    <p>Planillas de soporte para area grafica. Se menciona solo para dejar constancia mi flexibilidad</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NW - CAMIONES -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                2023 - Planilla cuaderno de ingreso de camiones - Grupo Newsport
+            </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/google_sheets.png" alt="icono google sheets">
+                        <img class="programas__i-logo" src="../img/iconos/looker_studio.png" alt="icono Lokker Studio">
+                    </div>
+                    <p>Planilla simple de control de ingreso de mercadería. Calcula: horas de trabajo descarga y tiempo de demora desde que se emite la factura hasta la descarga. También junta información necesaria que luego es graficada en un dashboard para análisis del rendimiento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NW - COMPRA -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                2023 - Adaptacion de planillas de compra para solicitud de mercaderia a locales para eventos - Grupo Newsport
+            </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Esta adaptacion es el claro ejemplo de la utilidad de mis servicios. Fue una tarea que me llevo menos de 10 minutos hacerla pero que simplifico al menos 24 horas hombre de trabajo y su resolución es muy util para eventos o fechas especiales</p>
+                    <p><em>A veces cosas simples producen grandes resultados</em></p>.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NW - SIAP -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                2023 - Sistemita temporal para Correcion masiva sistema AFIP - SIAP - Control de IVA - Grupo Newsport
+            </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/afip.png" alt="icono AFIP">
+                    </div>
+                    <p>Debido a un requerimiento de AFIP se tuvo que regenerar masivamente varios años de trabajo de este aplicativo. Por ello se generó temporalmente estas planillas que en 2 semanas gestiono 2 años de trabajo.</p>
+                    <p>Esta es una adaptación de un concepto utilizado</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NW - Tarjetas -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                2020 a 2023 - Sistema de Conciliacion masiva de operaciones de Tarjetas - Grupo Newsport
+            </button>
+            </h3>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/Access.png" alt="icono access">
+                        <img class="programas__i-logo" src="../img/iconos/flexxus.png" alt="icono flexxus">
+                    </div>
+                    <p>Serie de planillas de Excel y Access diseñadas con el objetivo de:
+                    <p>Tomar información provista por los diferentes servicios de Medios de Cobro: Payway (exPrisma), Fiserv (ex FirstData), American Express, Cabal, Sol, Tarjeta Naranja y Mercado Pago y pasarlos a una lista de transacciones generales en Access donde se puede buscar una operación pasada.</p>
+                    <p>Luego dicha información se cruza con los informes internos de Flexxus para conciliar dichos cupones y dejar visibles las diferencias a resolver (hablamos de un rango ilustrativo de 10 a 5000 operaciones).</p>
+                    <p>Adicionalmente la web tiene un cruce intermedio con una plataforma Gateway que conecta la plataforma de venta con dichos medios de cobro.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NC - PAGARES -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                2019 a 2023 - Planilla de generación masiva de pagares segun el formato especifico para que entren en una hoja - El Nuevo Ceibo S.A. y Plan x5 S.A.
+            </button>
+            </h3>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                    </div>
+                    <p>Este archivo se realizó para simplificar la tarea de la impresión de pagarés de forma masiva en El Nuevo Ceibo S.A., ya que originalmente se hacían uno por uno usando varias horas de trabajo para luego solo usar algunos minutos.</p>
+                    <p>Esta planilla adapto varias veces según las necesidades cambiantes y luego, debido a su utilidad, se adaptó para Plan X5 S.A.</p>
+                    <p>Esta es una de esas planillas que parecen simples, pero son complejas y ayudan un montón </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- NC - COBROS -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                2019 a 2023 - Planilla de seguimiento de cobros - El Nuevo Ceibo S.A.
+            </button>
+            </h3>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/google_sheets.png" alt="icono google sheets">
+                    </div>
+                    <p>Se diseño planilla que permite seguimiento de cuotas pagadas en su gestión de planes. La fortaleza de este archivo radica en sus valores agregados como ser:</p>
+                    <ul>
+                        <li>Cálculo de interés por mora (interés compuesto)</li>
+                        <li>Cálculo de valor actualizado de la cuota al día de la fecha (incluido el interés)</li>
+                        <li>Cálculo de la deuda total e interés total</li>
+                        <li>Cálculo de días faltantes para el vencimiento de la próxima cuota</li>
+                        <li>Botón para enviar mensaje de WhatsApp pre armado por la empresa a la persona señalada</li>
+                    </ul>
+                    <p></p>Se estima que como evolución, cierta información determinada viaje a otras planillas para hacer seguimiento de casos señalados para diferente tratamiento o un pasaje a un sistema interno de mayor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- MG - CAJAS -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                2019 a 2020 - Rediseño Planillas de Cajas adaptadas para su Conciliacion masiva - MAC Group
+            </button>
+            </h3>
+            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/Calipso.png" alt="icono Calipso">
+                    </div>
+                    <p>Originalmente eran planillas, formato caja, diarias y de forma horizontal, una al lado de otra. Visualmente eran 30 rectángulos en Excel donde cada uno lo rellenaba a sur forma para que luego unas personas contralaran toda esa información.</p>
+                    <p>Se rediseño las mismas, evitando alterar el formato visual, pero pensando que debían seguir un formato de carga obligatorio definido por la empresa que a su vez estaba bloqueado para que no se pueda alterar.</p>
+                    <p>Como valor agregado estas planillas tenían unas hojas especiales que recopilaban toda esa información y la mostraba verticalmente, una debajo de la otra permitiendo tener información clara, ordenada, continua y de fácil control ahorrando varias horas de trabajo.</p>
+                    <p>Adicionalmente, permitía generar exportables específicos para incorporar al sistema de gestión en uso.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- MG - IIBB SIAP -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                2018 a 2020 - Archivo de Soporte para conciliación de IIBB para su declaración en la AFIP - MAC Group
+            </button>
+            </h3>
+            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/Calipso.png" alt="icono Calipso">
+                        <img class="programas__i-logo" src="../img/iconos/afip.png" alt="icono AFIP">
+                    </div>
+                    <p>Planilla de soporte donde tomaba el informe de la lista de impuestos (IIBB) provista por calipso y la provista por la AFIP, la cruzaba en ambos sentidos e indicaba las diferencias para realizar las correcciones correspondientes y el seguimiento de las facturas pendientes de declarar.</p>
+                    <p>A su vez generaba las totalizaciones necesarias para los diferentes cálculos necesarios que requirió el sector.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- MG - FACT SIAP -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                2018 a 2020 - Sistema Conciliación de correcoón masiva de operaciones, para aplicativo AFIP SIAP - MAC Group
+            </button>
+            </h3>
+            <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/afip.png" alt="icono AFIP">
+                    </div>
+                    <p>Posiblemente todos los contables conocerán este aplicativo SIAP de la AFIP y muchos habrán tenido que lidiar con la importación de las facturas de compra y venta que se cargaba en el sistema.</p>
+                    <p>El tema del aplicativo es que no siempre el sistema de uso arrojaba el informe como el aplicativo lo necesita, provocando que tuvieran que realizar muchas correcciones manuales y ni hablar cuando la facturación estaba mal cargada y había que corregirla, aunque en realidad no era una, podían ser 10, 20, 30, 100, 1000 o más.</p>
+                    <p>Esta planilla que diseñé estaba pensada para tomar este informe, desglosarlo, hacer las correcciones y rearmártelo, además te detectaba una serie de errores comunes y te ayudaba a corregirlo.</p>
+                    <p><em>Recuerdo una anécdota de una vez que tuvimos que realizar la carga con un contador detrás, surgió un error con una serie de facturas, lo corregí en unos 10 minutos y el contador me dice “guau eso que hiciste yo hubiera tardado un par de horas”.</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- MG - FACT Gast -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                2017 a 2020 - Planillas para importación masiva de Facturas de compra - MAC Group
+            </button>
+            </h3>
+            <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                        <img class="programas__i-logo" src="../img/iconos/Access.png" alt="icono Access">
+                        <img class="programas__i-logo" src="../img/iconos/Calipso.png" alt="icono Calipso">
+                    </div>
+                    <p>Cuando entre a la empresa, mi función, como Data Entry, era cargar los gastos y facturas en el Sistema Calipso, sin embargo, era una tarea manual y como tarea manual estaba sujeta a un montón de errores.</p>
+                    <p>Cuando conseguí que Calipso me pudiese importar facturas, desarrolle un Excel, como plantilla para su importación masiva, incorporándole allí varias funciones de control en el momento para que de esta manera se pueda reducir los errores en el sistema.</p>
+                    <p>Cuando se habilito la carga de gastos en “rendiciones” adapte otra versión para estos gastos usando Access como intermediario para no tener que estar cargando las cosas comunes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item"><!-- LA AGUST  -->
+            <h3 class="accordion-header">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseTirtrene">
+                2014 a 2017 - Sistema de control de precios para inventario - La Agustina Polirubro
+            </button>
+            </h3>
+            <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="programas">
+                        <img class="programas__i-logo" src="../img/iconos/Excel.png" alt="icono Excel">
+                    </div>
+                    <p>Planillita simple para trabajar inventario y precios que luego se importaban a un sistema. Aguantaba 16 o 17 mil artículos y si la mirase ahora era bastante rudimentaria.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="fx-form-generico bcolgn 100 mv30"> <!--CONTACTAME NX-->
+        <h2 class="fx-form-generico__titulo colv1">Escribeme</h2>
+        <form class="fx-form-generico__form" action=""> 
+            <label for="fnombre">Nombre *:</label>
+            <input type="text" id="fnombre" placeholder="Andres" required>
+            <label for="fcelular">Celular *:</label>
+            <input type="tel" id="fcelular" placeholder="+54-3541-613185" required>
+            <label for="femail">Email:</label>
+            <input type="email" id="femail" placeholder="gustavo.sirtori@gmail.com">
+            <label for="fmotivo">Motivo *:</label>
+            <input type="text" id="fmotivo" placeholder="Necesito que me hagas una planilla" required>
+            <label for="fdescripcion">Descripción*:</label>
+            <textarea id="fdescripcion" cols="30" rows="8" placeholder="Hola, necesitaria una tabla para una pyme que se dedica a la construcción" required></textarea>
+            <br>
+            <button type="submit"><img src="../img/iconos/BotonTildeOK.png" alt="enviar" width="30px"></button>           
+            
+        </form>
+    </section>
+
+<!-- ************************** FOOTER N/I ************************** -->
+<footer class="footer bcoln3"><!-- FLEX N/I --> 
+    <span class="footer__sp-derechos"><!--  -->
+        <p class="footer__p-derechos">© 2023 Todos los derechos reservados</p>
+    </span>
+    <span class="footer__redes"><!-- N/I -->
+        <a class="footer__a-enlace" href="https://wa.me/5493541613185?text=Hola.%20Me%20gustaría%20contactarme%20contigo" target="_blank">
+            <img src="../img/iconos/whatsapp.png" alt="whatsapp" width="18px"></a>
+        <a class="footer__a-enlace" href=""  target="_blank">
+            <img src="../img/iconos/instagram.png" alt="instagram" width="18px"></a>
+        <a class="footer__a-enlace"  href="https://www.linkedin.com/in/gustavoandressirtori/"  target="_blank">
+            <img src="../img/iconos/linkedin.png" alt="linkedin" width="18px"></a>
+        <a class="footer__a-enlace"  href="https://www.facebook.com/gustavoandres.sirtori/"  target="_blank">
+            <img src="../img/iconos/facebook.png" alt="facebook" width="18px"></a>
+        <a class="footer__a-enlace"  href="mailto:gustavo.sirtori@gmail.com"  target="_blank">
+            <img src="../img/iconos/gmail.png" alt="enviar mail" width="18px"></a>
+    </span>
+    <span class="footer__menu-inferior"><!-- N/I -->
+        <a class="footer__a-enlace" href="../index.html">Inicio</a>
+        <a class="footer__a-enlace" href="./services.html">Servicios</a>
+        <a class="footer__a-enlace" href="./portfolio.html">Portfolio</a>
+        <a class="footer__a-enlace" href="./about_me.html">Sobre mi</a>
+        <a class="footer__a-enlace" href="./contact_me.html">Escribeme</a>
+    </span>
+</footer>
+
+<!-- ***************** AREA RESERVADA PARA EXTRAS *************** -->
+<section class="whatsapp"> <!-- fijo ↘ N/I -->
+    <a href="https://wa.me/5493541613185?text=Hola.%20Me%20gustaría%20contactarme%20contigo" target="_blank">
+        <img class="whatsapp__i-logo" src="../img/iconos/whatsapp_fijo.png" alt="boton whatsapp">
+    </a>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

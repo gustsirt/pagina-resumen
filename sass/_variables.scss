@@ -1,0 +1,58 @@
+// colores
+$c-negro:  #0d0d0d;
+$c-negro2: #272829;
+$c-blanco: #d9d9d9;
+$c-nar1:   #e88300;
+$c-nar2:   #f2C08d;
+$c-nar3:   #a66503;
+$c-nar4:   #603b03;
+$c-ver1:   #11f05f;
+$c-ver2:   #8df2a6;
+$c-ver3:   #446f02;
+$c-ver4:   #335203;
+$c-azu1:   #3b12f0;
+$c-azu2:   #8d90f2;
+$c-azu3:   #0563bb;
+$c-azu4:   #022963;
+$c-gris1:  #45505b;
+$c-gris2:  #f2f3f5;
+$c-gris3:  #92959a;
+
+$color0: orange;
+$color: #fff;
+$cligt: #fff;
+$copcn: #fff;
+$cstrg: #fff;
+
+@if $color0 == blue {
+  $color: $c-azu1;
+  $cligt: $c-azu2;
+  $copcn: $c-azu3;
+  $cstrg: $c-azu4;
+} @else if $color0 == orange{
+  $color: $c-nar1;
+  $cligt: $c-nar2;
+  $copcn: $c-nar3;
+  $cstrg: $c-nar4;
+} @else if $color0 == green{
+  $color: $c-ver1;
+  $cligt: $c-ver2;
+  $copcn: $c-ver3;
+  $cstrg: $c-ver4;
+} @else {
+  $color: $c-negro2;
+  $cligt: $c-gris2;
+  $copcn: $c-gris1;
+  $cstrg: $c-gris3;
+}
+
+/* Modificadores de elementos
+--------------------------------------------------------------*/
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {    font-family: "Open Sans", sans-serif; color: $c-negro2; }
+h1, h2, h3, h4, h5, h6 {  font-family: "Raleway", sans-serif; }
+a, a:hover {       color: $copcn;       text-decoration: none;   }
+
+
+
+
