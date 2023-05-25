@@ -55,4 +55,20 @@ a, a:hover {       color: $copcn;       text-decoration: none;   }
 
 
 
+/* Especiales
+--------------------------------------------------------------*/
+.programas{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 
+  &__i-logo{ width: 100px;}
+}
+
+/* Anchos
+--------------------------------------------------------------*/
+@for $i from 1 through 20 {
+	.w#{5*$i}{
+	width:5% * $i;
+	}
+}

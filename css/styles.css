@@ -20,6 +20,99 @@ a, a:hover {
   text-decoration: none;
 }
 
+/* Especiales
+--------------------------------------------------------------*/
+.programas {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.programas__i-logo {
+  width: 100px;
+}
+
+/* Anchos
+--------------------------------------------------------------*/
+.w5 {
+  width: 5%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w15 {
+  width: 15%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w35 {
+  width: 35%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w45 {
+  width: 45%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w55 {
+  width: 55%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w65 {
+  width: 65%;
+}
+
+.w70 {
+  width: 70%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w85 {
+  width: 85%;
+}
+
+.w90 {
+  width: 90%;
+}
+
+.w95 {
+  width: 95%;
+}
+
+.w100 {
+  width: 100%;
+}
+
 /* Header
 --------------------------------------------------------------*/
 .myheader {
@@ -283,6 +376,12 @@ a, a:hover {
   font-weight: 700;
   font-size: 2rem;
 }
+.sec-gral__subtitle--exp {
+  color: #446f02;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
 .sec-gral__text {
   margin-bottom: 1rem;
   text-align: 1.5;
@@ -292,6 +391,14 @@ a, a:hover {
   font-weight: bold;
 }
 .sec-gral__textitl {
+  font-style: italic;
+  color: #335203;
+}
+.sec-gral__textref {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
   font-style: italic;
   color: #335203;
 }
@@ -310,4 +417,36 @@ a, a:hover {
   font-size: 1rem;
   margin-right: 0.5rem;
   color: #446f02;
+}
+.sec-gral__puntajes {
+  margin-bottom: 3rem;
+}
+.sec-gral__puntajes .base {
+  height: 60px;
+  display: block;
+  background: none;
+  width: 40%;
+}
+.sec-gral__puntajes .base .title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sec-gral__puntajes .base .title .skill, .sec-gral__puntajes .base .title .val {
+  padding: 0.4rem 0;
+  margin: 0;
+  display: block;
+  color: #45505b;
+}
+.sec-gral__puntajes .base .progress {
+  height: 10px;
+  border-radius: 0;
+  background: #f2f3f5;
+}
+.sec-gral__puntajes .base .progress .progress-bar {
+  width: 1px;
+  transition: 0.9s;
+  background-color: #446f02;
 }/*# sourceMappingURL=styles.css.map */

@@ -36,6 +36,13 @@
     font-size: 2rem;
   }
 
+  &__subtitle--exp{
+    color: $copcn;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
   &__text {
     margin-bottom: 1rem;
     text-align: 1.5;
@@ -47,6 +54,15 @@
   }
 
   &__textitl{
+    font-style: italic;
+    color: $cstrg;
+  }
+
+  &__textref{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
     font-style: italic;
     color: $cstrg;
   }
@@ -68,7 +84,45 @@
   }
 }
 
+  &__puntajes{
+    margin-bottom: 3rem;
 
+    & .base {
+      height: 60px;
+      display: block;
+      background: none;
+      width: 40%;
+
+      & .title{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+
+        & .skill, .val {
+          padding: 0.4rem 0;
+          margin: 0;
+          display: block;
+          color: $c-gris1;
+        }
+      }
+
+      & .progress {
+        height: 10px;
+        border-radius: 0;
+        background: $c-gris2;
+
+        & .progress-bar{
+          width: 1px;
+          transition: 0.9s;
+          background-color: $copcn;
+        }
+      }
+      
+    }
+
+  }
 
 
 }
