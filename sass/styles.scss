@@ -1,6 +1,74 @@
 @import "./variables";
 @import "./header";
 @import "./footer";
-
 @import "./hero";
 
+/* Seccion Vertical
+--------------------------------------------------------------*/
+.sec-gral{
+  padding: 2rem 0;
+
+  &__linea{
+    margin: 2.5rem 0;
+  }
+
+  &__title{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $c-gris1;
+  }
+
+  &__hr-title{
+    height: 1px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid $cstrg;
+  }
+
+  &__subtitle{
+    color: $copcn;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    text-align: 1.5;
+    text-align: justify;
+  }
+
+  &__textstr{
+    font-weight: bold;
+  }
+
+  &__textitl{
+    font-style: italic;
+    color: $cstrg;
+  }
+
+  &__ul {
+  list-style-type: none;
+  & li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    & span{
+      padding: 0 1rem;
+    }
+  }
+  & i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: $copcn;
+  }
+}
+
+
+
+
+}

@@ -143,29 +143,29 @@ a, a:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#myfooter {
+.myfooter {
   background: #d9d9d9;
   color: #45505b;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
 }
-#myfooter h3 {
+.myfooter__title {
   font-size: 36px;
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
   margin: 0 0 15px 0;
 }
-#myfooter p {
+.myfooter__descrip {
   font-size: 15;
   font-style: italic;
   margin: 0 0 40px 0;
 }
-#myfooter .social-links {
+.myfooter__social-links {
   margin: 0 0 40px 0;
 }
-#myfooter .social-links a {
+.myfooter__social-links a {
   font-size: 18px;
   display: inline-block;
   background: #446f02;
@@ -179,12 +179,12 @@ a, a:hover {
   height: 36px;
   transition: 0.3s;
 }
-#myfooter .social-links a:hover {
+.myfooter__social-links a:hover {
   background: #446f02;
   color: #d9d9d9;
   text-decoration: none;
 }
-#myfooter .copyright {
+.myfooter__copyright {
   margin: 0 0 5px 0;
 }
 
@@ -253,4 +253,61 @@ a, a:hover {
     font-size: 20px;
     line-height: 24px;
   }
+}
+/* Seccion Vertical
+--------------------------------------------------------------*/
+.sec-gral {
+  padding: 2rem 0;
+}
+.sec-gral__linea {
+  margin: 2.5rem 0;
+}
+.sec-gral__title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #45505b;
+}
+.sec-gral__hr-title {
+  height: 1px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #335203;
+}
+.sec-gral__subtitle {
+  color: #446f02;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.sec-gral__text {
+  margin-bottom: 1rem;
+  text-align: 1.5;
+  text-align: justify;
+}
+.sec-gral__textstr {
+  font-weight: bold;
+}
+.sec-gral__textitl {
+  font-style: italic;
+  color: #335203;
+}
+.sec-gral__ul {
+  list-style-type: none;
+}
+.sec-gral__ul li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.sec-gral__ul li span {
+  padding: 0 1rem;
+}
+.sec-gral__ul i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #446f02;
 }/*# sourceMappingURL=styles.css.map */
