@@ -1,0 +1,36 @@
+
+@page {
+  margin:1cm;
+}
+
+@page:top-left {
+  display: none;
+}
+
+.myheader, #mobile-button, .myfooter{
+    display: none;
+
+}
+
+.cvitae{
+  width: 100%;
+  margin: 0;
+}
+
+.cvitae * {
+  font-family: "Poppins", sans-serif;
+  font-size: 9pt;
+}
+
+.cvitae__title1{
+  font-size: 20pt;
+  font-weight: normal;
+}
+
+.cvitae__subtitle{
+  font-size: 10pt;
+}
+
+.cvitae__title2{
+  font-size: 12pt;
+}

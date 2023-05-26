@@ -26,6 +26,7 @@ a, a:hover {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .programas__i-logo {
   width: 100px;
@@ -453,6 +454,7 @@ a, a:hover {
 }
 .sec-gral__foto {
   width: 100%;
+  justify-self: center;
 }
 
 @media (max-width: 991px) {
@@ -464,30 +466,23 @@ a, a:hover {
 /* CV
 ---------------------------------------*/
 .cvitae {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 90%;
-  margin: 4rem auto;
+  margin: 4rem 2rem;
 }
 .cvitae * {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .cvitae__1ra-col {
-  display: flex;
-  flex-direction: column;
   background-color: #d9d9d9;
   padding: 1rem;
 }
 .cvitae__2da-col {
-  display: flex;
-  flex-direction: column;
   background: #f7f7f7;
   padding: 1rem;
 }
 .cvitae__foto {
   border-radius: 40%;
   width: 80%;
-  margin: 1rem auto;
+  margin: 1rem 0;
 }
 .cvitae__title1 {
   font-size: 5rem;
@@ -522,7 +517,7 @@ a, a:hover {
   border: 4px solid #022963;
   margin-bottom: 2rem;
 }
-.cvitaee__p {
+.cvitae__p {
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -550,4 +545,107 @@ a, a:hover {
 .cvitae__item-p {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .cvitae {
+    margin: 3rem 1rem;
+  }
+  .cvitae * {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+  }
+  .cvitae__1ra-col {
+    padding: 0.8rem;
+  }
+  .cvitae__2da-col {
+    padding: 0.8rem;
+  }
+  .cvitae__foto {
+    margin: 0.8rem auto;
+  }
+  .cvitae__title1 {
+    font-size: 4rem;
+  }
+  .cvitae__subtitle {
+    font-size: 1rem;
+  }
+  .cvitae__title2 {
+    font-size: 1.3rem;
+  }
+  .cvitae__linea {
+    margin: 0.8rem;
+  }
+  .cvitae__linea--gruesa {
+    margin-bottom: 1.5rem;
+  }
+  .cvitae__p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
+  .cvitae__link {
+    margin-bottom: 0.8rem;
+  }
+  .cvitae__item {
+    line-height: 1.2;
+  }
+  .cvitae__list-p {
+    margin-bottom: 1.5rem;
+  }
+  .cvitae__item-p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 576px) {
+  .cvitae {
+    margin: 2rem 0.5rem;
+  }
+  .cvitae * {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.5rem;
+  }
+  .cvitae__1ra-col {
+    padding: 0.5rem;
+  }
+  .cvitae__2da-col {
+    padding: 0.5rem;
+  }
+  .cvitae__foto {
+    margin: 0.5rem auto;
+  }
+  .cvitae__title1 {
+    font-size: 2rem;
+  }
+  .cvitae__subtitle {
+    font-size: 0.8rem;
+  }
+  .cvitae__title2 {
+    font-size: 1rem;
+  }
+  .cvitae__linea {
+    margin: 0.7rem;
+  }
+  .cvitae__linea--gruesa {
+    margin-bottom: 1rem;
+  }
+  .cvitae__p {
+    font-size: 0.7rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+  .cvitae__link {
+    margin-bottom: 0.7rem;
+  }
+  .cvitae__item {
+    line-height: 1;
+  }
+  .cvitae__list-p {
+    margin-bottom: 1rem;
+  }
+  .cvitae__item-p {
+    font-size: 0.7rem;
+    line-height: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

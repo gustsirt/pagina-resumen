@@ -2,25 +2,18 @@
 ---------------------------------------*/
 
 .cvitae{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 90%;
-  margin: 4rem auto;
+  margin: 4rem 2rem;
 
   & * {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   &__1ra-col{
-    display: flex;
-    flex-direction: column;
     background-color: #d9d9d9;
     padding: 1rem;
   }
 
   &__2da-col{
-    display: flex;
-    flex-direction: column;
     background: #f7f7f7;
     padding: 1rem;
   }
@@ -28,7 +21,7 @@
   &__foto{
     border-radius: 40%;
     width: 80%;
-    margin: 1rem auto;
+    margin: 1rem 0;
   }
 
   &__title1{
@@ -70,7 +63,7 @@
     margin-bottom: 2rem;
   }
   
-  &e__p{
+  &__p{
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -105,5 +98,139 @@
   &__item-p{
     font-size: 1.2rem;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .cvitae{
+    margin: 3rem 1rem;
+  
+    & * {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.8rem;
+    }
+  
+    &__1ra-col{
+      padding: 0.8rem;
+    }
+  
+    &__2da-col{
+      padding: 0.8rem;
+    }
+  
+    &__foto{
+      margin: 0.8rem auto;
+    }
+  
+    &__title1{
+      font-size: 4rem;
+    }
+  
+    &__subtitle{
+      font-size: 1rem;
+    }
+  
+    &__title2{
+      font-size: 1.3rem;
+    }
+    
+    &__linea{
+      margin: 0.8rem;
+    }
+  
+    &__linea--gruesa{
+      margin-bottom: 1.5rem;
+    }
+    
+    &__p{
+      font-size: 0.8rem;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    &__link{
+      margin-bottom: 0.8rem;
+    }
+
+    &__item{
+      line-height: 1.2;
+    }
+    
+    &__list-p{
+      margin-bottom: 1.5rem;
+    }
+    
+    &__item-p{
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .cvitae{
+    margin: 2rem 0.5rem;
+  
+    & * {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.5rem;
+    }
+  
+    &__1ra-col{
+      padding: 0.5rem;
+    }
+  
+    &__2da-col{
+      padding: 0.5rem;
+    }
+  
+    &__foto{
+      margin: 0.5rem auto;
+    }
+  
+    &__title1{
+      font-size: 2rem;
+    }
+  
+    &__subtitle{
+      font-size: 0.8rem;
+    }
+  
+    &__title2{
+      font-size: 1rem;
+    }
+    
+    &__linea{
+      margin: 0.7rem;
+    }
+  
+    &__linea--gruesa{
+      margin-bottom: 1rem;
+    }
+    
+    &__p{
+      font-size: 0.7rem;
+      line-height: 1;
+      margin-bottom: 0.7rem;
+    }
+
+    &__link{
+      margin-bottom: 0.7rem;
+    }
+
+    &__item{
+      line-height: 1;
+    }
+    
+    &__list-p{
+      margin-bottom: 1rem;
+    }
+    
+    &__item-p{
+      font-size: 0.7rem;
+      line-height: 1;
+    }
   }
 }
