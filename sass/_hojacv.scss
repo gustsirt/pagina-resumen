@@ -9,7 +9,7 @@
   }
 
   &__1ra-col{
-    background-color: #d9d9d9;
+    background-color: $c-blanco;
     padding: 1rem;
   }
 
@@ -27,7 +27,7 @@
   &__title1{
     font-size: 5rem;
     text-align: center;
-    color: #022963;
+    color: $copcn;
     margin-bottom: 0;
     font-weight: normal;
   }
@@ -41,13 +41,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
-    color: #022963;
+    color: $copcn;
     margin-bottom: 0;
     text-transform: uppercase;
   }
   
   &__linea{
-    border: 2px solid #022963;
+    border: 2px solid $copcn;
     border-radius: 300px/10px;
     height: 0px;
     text-align: center;
@@ -55,11 +55,11 @@
   }
 
   &__linea--fina{
-    border: 1px solid #022963;
+    border: 1px solid $copcn;
   }
   
   &__linea--gruesa{
-    border: 4px solid #022963;
+    border: 4px solid $copcn;
     margin-bottom: 2rem;
   }
   
@@ -69,12 +69,12 @@
   }
   
   &__link{
-    color: #022963;
+    color: $copcn;
     margin-bottom: 1rem;
   }
   
   &__link:visited{
-    color: #022963;
+    color: $copcn;
   }
 
   &__list{
@@ -83,7 +83,7 @@
   }
   
   &__list::marker{
-    color: #022963;
+    color: $copcn;
   }
   
   &__item{
@@ -212,7 +212,7 @@
     
     &__p{
       font-size: 0.7rem;
-      line-height: 1;
+      line-height: 1.2;
       margin-bottom: 0.7rem;
     }
 
@@ -221,7 +221,7 @@
     }
 
     &__item{
-      line-height: 1;
+      line-height: 1.2;
     }
     
     &__list-p{
@@ -230,7 +230,7 @@
     
     &__item-p{
       font-size: 0.7rem;
-      line-height: 1;
+      line-height: 1.2;
     }
   }
 }

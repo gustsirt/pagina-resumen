@@ -487,7 +487,7 @@ a, a:hover {
 .cvitae__title1 {
   font-size: 5rem;
   text-align: center;
-  color: #022963;
+  color: #446f02;
   margin-bottom: 0;
   font-weight: normal;
 }
@@ -499,22 +499,22 @@ a, a:hover {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
-  color: #022963;
+  color: #446f02;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 .cvitae__linea {
-  border: 2px solid #022963;
+  border: 2px solid #446f02;
   border-radius: 300px/10px;
   height: 0px;
   text-align: center;
   margin: 1rem;
 }
 .cvitae__linea--fina {
-  border: 1px solid #022963;
+  border: 1px solid #446f02;
 }
 .cvitae__linea--gruesa {
-  border: 4px solid #022963;
+  border: 4px solid #446f02;
   margin-bottom: 2rem;
 }
 .cvitae__p {
@@ -522,18 +522,18 @@ a, a:hover {
   margin-bottom: 1rem;
 }
 .cvitae__link {
-  color: #022963;
+  color: #446f02;
   margin-bottom: 1rem;
 }
 .cvitae__link:visited {
-  color: #022963;
+  color: #446f02;
 }
 .cvitae__list {
   list-style-type: circle;
   list-style-position: inside;
 }
 .cvitae__list::marker {
-  color: #022963;
+  color: #446f02;
 }
 .cvitae__item {
   line-height: 1.3;
@@ -632,20 +632,20 @@ a, a:hover {
   }
   .cvitae__p {
     font-size: 0.7rem;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 0.7rem;
   }
   .cvitae__link {
     margin-bottom: 0.7rem;
   }
   .cvitae__item {
-    line-height: 1;
+    line-height: 1.2;
   }
   .cvitae__list-p {
     margin-bottom: 1rem;
   }
   .cvitae__item-p {
     font-size: 0.7rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 }/*# sourceMappingURL=styles.css.map */
