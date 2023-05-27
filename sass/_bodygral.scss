@@ -1,7 +1,7 @@
 /* Seccion Vertical
 --------------------------------------------------------------*/
 .sec-gral{
-  padding: 2rem 0;
+  padding-top: 0;
 
   &__linea{
     margin: 2.5rem 0;
@@ -14,6 +14,10 @@
     font-weight: bold;
     text-transform: uppercase;
     color: $c-gris1;
+  }
+
+  & h1 {
+    margin-top: 2.5rem;
   }
 
   &__hr-title{
@@ -79,6 +83,12 @@
   }
 }
 
+  &__foto{
+    width: 100%;
+    justify-self: center;
+  }
+
+  // puntajes = progres bar completo
   &__puntajes{
     margin-bottom: 3rem;
 
@@ -119,11 +129,71 @@
 
   }
 
-  &__foto{
-    width: 100%;
-    justify-self: center;
-  }
+  // tarjeta conboton modal
+  &__modalcard{
+    margin-top: 1.5rem;
 
+    & .icon-box {
+      text-align: center;
+      padding: 70px 20px 80px 20px;
+      background: $c-blancor;
+      box-shadow: 0px 5px 90px 0px #6e7b8315;
+
+      & .icon {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        & svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          & path {
+            fill: #f5f5f5;
+          }
+        }
+
+        & i {
+          font-size: 2rem;
+          position: relative;
+          color: $copcn;
+        }
+
+      }
+
+      & .ctitle {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        margin: 10px 0 15px 0;
+        font-size: 1.5rem;
+        color: $c-gris1;
+      }
+
+      & .ctext {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        border-color: $c-blancor;
+        box-shadow: 0px 0 35px 0 #0000002c;
+
+        & .icon path {
+          fill: $copcn;
+        }
+
+        & i {
+          color: $c-blancor;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 991px){
   .sec-gral__foto{

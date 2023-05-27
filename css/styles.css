@@ -352,7 +352,7 @@ a, a:hover {
 /* Seccion Vertical
 --------------------------------------------------------------*/
 .sec-gral {
-  padding: 2rem 0;
+  padding-top: 0;
 }
 .sec-gral__linea {
   margin: 2.5rem 0;
@@ -364,6 +364,9 @@ a, a:hover {
   font-weight: bold;
   text-transform: uppercase;
   color: #45505b;
+}
+.sec-gral h1 {
+  margin-top: 2.5rem;
 }
 .sec-gral__hr-title {
   height: 1px;
@@ -420,6 +423,10 @@ a, a:hover {
   margin-right: 0.5rem;
   color: #446f02;
 }
+.sec-gral__foto {
+  width: 100%;
+  justify-self: center;
+}
 .sec-gral__puntajes {
   margin-bottom: 3rem;
 }
@@ -452,9 +459,58 @@ a, a:hover {
   transition: 0.9s;
   background-color: #446f02;
 }
-.sec-gral__foto {
-  width: 100%;
-  justify-self: center;
+.sec-gral__modalcard {
+  margin-top: 1.5rem;
+}
+.sec-gral__modalcard .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  background: white;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.0823529412);
+}
+.sec-gral__modalcard .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sec-gral__modalcard .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sec-gral__modalcard .icon-box .icon svg path {
+  fill: #f5f5f5;
+}
+.sec-gral__modalcard .icon-box .icon i {
+  font-size: 2rem;
+  position: relative;
+  color: #446f02;
+}
+.sec-gral__modalcard .icon-box .ctitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 1.5rem;
+  color: #45505b;
+}
+.sec-gral__modalcard .icon-box .ctext {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.sec-gral__modalcard .icon-box:hover {
+  border-color: white;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.1725490196);
+}
+.sec-gral__modalcard .icon-box:hover .icon path {
+  fill: #446f02;
+}
+.sec-gral__modalcard .icon-box:hover i {
+  color: white;
 }
 
 @media (max-width: 991px) {
