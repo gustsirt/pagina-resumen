@@ -1,0 +1,87 @@
+/* Formulario
+--------------------------------------------------------------*/
+.sec-form{
+  margin-top: 0.25rem;
+
+  &__info {
+    width: 100%;
+    background: $c-blancor;
+
+    & .linea {
+
+      & i {
+        font-size: 20px;
+        color: $copcn;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: $c-blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+  
+      & .title {
+        font-family: "Raleway", sans-serif;
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $c-gris1;
+      }
+
+      & .txt {
+        padding: 0 0 0 60px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #728394;
+      }
+
+      &:hover i {
+        background: $copcn;
+        color: $c-blanco;
+      }
+    }
+
+  }
+
+  &__form {
+    width: 100%;
+    background: $c-blancor;
+    margin-bottom: 2rem;
+
+    & .form-group {
+      padding-bottom: 10px;
+    }
+
+    & input, & textarea {
+      border-radius: 4px;
+      box-shadow: none;
+      font-size: 1rem;
+    }
+
+    & input {
+      height: 44px;
+    }
+
+    & textarea {
+      padding: 10px 12px;
+    }
+
+    & button[type=submit] {
+      background: $copcn;
+      border: 0;
+      padding: 10px 35px;
+      color: $c-blancor;
+      transition: 0.4s;
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+
+    & button[type=submit]:hover {
+      background: $copcn;
+    }
+  }
+}
+

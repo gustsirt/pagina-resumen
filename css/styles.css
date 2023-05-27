@@ -744,4 +744,74 @@ a, a:hover {
     font-size: 0.7rem;
     line-height: 1.2;
   }
+}
+/* Formulario
+--------------------------------------------------------------*/
+.sec-form {
+  margin-top: 0.25rem;
+}
+.sec-form__info {
+  width: 100%;
+  background: white;
+}
+.sec-form__info .linea i {
+  font-size: 20px;
+  color: #446f02;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.sec-form__info .linea .title {
+  font-family: "Raleway", sans-serif;
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+.sec-form__info .linea .txt {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+.sec-form__info .linea:hover i {
+  background: #446f02;
+  color: #d9d9d9;
+}
+.sec-form__form {
+  width: 100%;
+  background: white;
+  margin-bottom: 2rem;
+}
+.sec-form__form .form-group {
+  padding-bottom: 10px;
+}
+.sec-form__form input, .sec-form__form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 1rem;
+}
+.sec-form__form input {
+  height: 44px;
+}
+.sec-form__form textarea {
+  padding: 10px 12px;
+}
+.sec-form__form button[type=submit] {
+  background: #446f02;
+  border: 0;
+  padding: 10px 35px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.sec-form__form button[type=submit]:hover {
+  background: #446f02;
 }/*# sourceMappingURL=styles.css.map */

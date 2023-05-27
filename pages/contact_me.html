@@ -45,13 +45,67 @@
   <!-- ======= MAIN ======= -->
   <main class="mymain">
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Contact Section ======= -->
     <section class="container sec-gral">
 
-      <h1 class="sec-gral__title">EN DESARROLLO</h1>
+      <h1 class="sec-gral__title">Contacto</h1>
       <hr class="sec-gral__hr-title">
-    </section>
-    
+      <p class="sec-gral__text text-center">Si estas interesado en mis servicios o quieres proponerme algo escribeme</p>
+
+      <div class="row mt-5">
+
+        <!-- ======= Datos de contacto ======= -->
+        <div class="col-lg-4 sec-form">
+          <div class="sec-form__info">
+            <div class="linea">
+              <i class='bx bx-location-plus'></i>
+              <p class="title">Ubicación:</p>
+              <p class=".txt">Córdoba, Argentina</p>
+            </div>
+  
+            <div class="linea mt-5">
+              <i class='bx bx-envelope'></i>
+              <p class="title">Email:</p>
+              <p class=".txt">gustavo.sirtori@gmail.com</p>
+            </div>
+  
+            <div class="linea mt-5">
+              <i class='bx bx-mobile-alt'></i>
+              <p class="title">Whatsapp:</p>
+              <p class=".txt">+54-9-3541-613185</p>
+            </div>
+          </div>
+        </div><!-- Fin Datos de contacto -->
+
+        <!-- ======= Formulario ======= -->
+        <div class="col-lg-8">
+
+          <form action="https://formsubmit.co/gustavo.sirtori@gmail.com" method="POST" class="sec-form__form">
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="fnombre" class="form-control" id="fnombre" placeholder="Escribe tu nombre *" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="femail" id="femail" placeholder="Escribe tu Email *" required>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="fmotivo" id="fmotivo" placeholder="Indica el Motivo *" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="fmensaje" rows="5" placeholder="Escribe aquí tu mensaje *" required></textarea>
+            </div>
+
+            <div class="text-center"><button type="submit">Enviar mensaje <i class='bx bx-mail-send'></i></button></div>
+
+          </form>
+        </div><!-- Fin Formulario -->
+
+      </div>
+    </section><!-- Fin Contact Section -->
   </main><!-- End Main -->
 
   <!-- ======= Footer ======= -->
