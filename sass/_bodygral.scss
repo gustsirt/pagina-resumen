@@ -248,3 +248,14 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 576px) {
+  .sec-gral{
+    &__modalcontend {
+      & .modal-header {
+        & div {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
