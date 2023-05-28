@@ -84,6 +84,7 @@
   &__list{
     list-style-type:circle;
     list-style-position: inside;
+    padding-inline-start: 0;
   }
   
   &__list::marker{
@@ -226,10 +227,6 @@
 
     &__item{
       line-height: 1.2;
-    }
-
-    &__list{
-      padding-inline-start: 0;
     }
 
     &__list-p{

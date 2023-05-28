@@ -13,7 +13,10 @@
   <meta name="author" content="Gustavo Andres Sirtori">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/site.webmanifest">
 
   <!-- Librerias -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <!-- bootstrap -->
@@ -50,11 +53,12 @@
     <!-- ======= Portfolio Section ======= -->
     <section class="container sec-gral">
 
-      <h1 class="sec-gral__title">Porfolio<br>EN DESARROLLO</h1>
+      <h1 class="sec-gral__title">Porfolio</h1>
       <hr class="sec-gral__hr-title">
 
       <!-- ======= Introduccion ======= -->
       <div class="row sec-gral__linea">
+        <p class="sec-gral__textstr text-center text-decoration-underline">PAGINA EN DESARROLLO</p>
         <p class="sec-gral__text">Lo que más me gusta de crear son los desafíos, siempre hay retos que superar en tu camino y no dejo que ningún problema me venza, le busco la vuelta y aunque no siempre de con lo ideal, con cada cosa que aprendo pienso como eso hubiera podido contribuir a anteriores creaciones. En pocas palabras yo disfruto resolviendo cosas.</p>
       </div><!-- Fin Introduccion -->
 
@@ -66,9 +70,13 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="imgFilter__filters">
               <li data-filter="todos" class="fltt filter-active">All</li>
-              <li data-filter="fapp"  class="fltt fapp">Excel</li>
-              <li data-filter="fcard" class="fltt fcard">Sheet</li>
-              <li data-filter="fweb"  class="fltt fweb">Looker</li>
+              <li data-filter="fexcel"  class="fltt fexcel">Excel</li>
+              <li data-filter="fsheet" class="fltt fsheet">Sheet</li>
+              <li data-filter="faccess"  class="fltt faccess">Access</li>
+              <li data-filter="flooker"  class="fltt flooker">Looker</li>
+              <li data-filter="fpbi"  class="fltt fpbi">Power Bi</li>
+              <li data-filter="fhtml"  class="fltt fhtml">Html</li>
+              <li data-filter="fjs"  class="fltt fjs">Java Scrip</li>
           </ul></div>
         </div><!-- End Filters -->
 
@@ -76,63 +84,174 @@
         <!-- ======= Filters : Cuerpo======= -->
         <div class="row" id="imgFilter__container">
 
-          <div class="col-lg-4 col-md-6 imgitem elemento fapp">
+          <div class="col-lg-4 col-md-6 imgitem elemento fsheet flooker fpbi"><!-- NW - Picking -->
             <div class="imgitem__wrap">
               <img src="../img/fondos/item1.jpg" alt="item1">
               <div class="winfo">
-                <p class="title">App 1</p>  
-                <p class="desc">App</p>
+                <p class="title">Sistema de control Logistico Interno</p>  
+                <p class="desc">Grupo Newsport - 2022 a 2023</p>
                 <div class="wlinks">
-                  <a href=""><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem1"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
 
-          <div class="col-lg-4 col-md-6 imgitem elemento fweb">
+          <div class="col-lg-4 col-md-6 imgitem elemento fhtml fjs"><!-- NC - Pagares -->
             <div class="imgitem__wrap">
               <img src="../img/fondos/item2.jpg" alt="item2">
               <div class="winfo">
-                <p class="title">Web 3</p>
-                <p class="desc">Web</p>
+                <p class="title">Pagares autonumerados</p>  
+                <p class="desc">Nuevo Ceibo - 2023</p>
                 <div class="wlinks">
-                  <a href=""><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem2"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
 
-          <div class="col-lg-4 col-md-6 imgitem elemento fapp">
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- ID - graf -->
             <div class="imgitem__wrap">
               <img src="../img/fondos/item3.jpg" alt="item3">
               <div class="winfo">
-                <p class="title">App 2</p>
-                <p class="desc">App</p>
+                <p class="title">Planilla de control de producción y generación de remito</p>  
+                <p class="desc">Idearte S.A. - 2023</p>
                 <div class="wlinks">
-                  <a href=""><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem3"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
 
-          <div class="col-lg-4 col-md-6 imgitem elemento fcard">
+          <div class="col-lg-4 col-md-6 imgitem elemento fsheet flooker"><!-- NW - CAMIONES -->
             <div class="imgitem__wrap">
               <img src="../img/fondos/item4.jpg" alt="item4">
               <div class="winfo">
-                <p class="title">Card 2</p>
-                <p class="desc">
+                <p class="title">Planilla cuaderno de ingreso de camiones</p>  
+                <p class="desc">Grupo Newsport - 2023</p>
                 <div class="wlinks">
-                  <a href=""><i class="bx bx-link"></i></a>
-                </div
-              </div>
-            </div>
-          </div>
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem4"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
 
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- NW - COMPRA -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item5.jpg" alt="item5">
+              <div class="winfo">
+                <p class="title">Adaptacion - Sector Compras - Solicitud de mercaderia por Eventos</p>  
+                <p class="desc">Grupo Newsport - 2023</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem5"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- NW - SIAP -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item1.jpg" alt="item1">
+              <div class="winfo">
+                <p class="title">Correcion masiva sistema AFIP - SIAP - Control de IVA</p>  
+                <p class="desc">Grupo Newsport - 2023</p>
+                <p class="desc">MAC Group - 2028 a 2020</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem6"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel faccess"><!-- NW - Tarjetas -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item2.jpg" alt="item2">
+              <div class="winfo">
+                <p class="title">Sistema de Conciliacion masiva de operaciones de Tarjetas</p>  
+                <p class="desc">Grupo Newsport - 2020 a 2023</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem7"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- NC - PAGARES -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item3.jpg" alt="item3">
+              <div class="winfo">
+                <p class="title">Generación masiva de Pagares autonumerados</p>  
+                <p class="desc">El Nuevo Ceibo S.A. - 2019 a 2023</p>
+                <p class="desc">Plan x5 S.A. - 2022 a 2023</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem8"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fsheet"><!-- NC - COBROS -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item4.jpg" alt="item4">
+              <div class="winfo">
+                <p class="title">Planilla de seguimiento de cobros</p>  
+                <p class="desc">El Nuevo Ceibo S.A. - 2019 a 2023</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem9"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- MG - CAJAS -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item5.jpg" alt="item5">
+              <div class="winfo">
+                <p class="title">Rediseño Planillas de Cajas adaptadas para su Conciliacion masiva</p>  
+                <p class="desc">MAC Group - 2019 a 2021</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem10"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel"><!-- MG - IIBB SIAP -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item1.jpg" alt="item1">
+              <div class="winfo">
+                <p class="title">Soporte para conciliación de IIBB para su declaración en la AFIP</p>  
+                <p class="desc">MAC Group - 2018 a 2020</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem11"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel faccess"><!-- MG - FACT Gast -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item2.jpg" alt="item2">
+              <div class="winfo">
+                <p class="title">Planillas para importación masiva de Facturas de compra</p>  
+                <p class="desc">MAC Group - 2017 a 2020</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem12"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
+
+          <div class="col-lg-4 col-md-6 imgitem elemento fexcel faccess"><!-- LA AGUST  -->
+            <div class="imgitem__wrap">
+              <img src="../img/fondos/item3.jpg" alt="item3">
+              <div class="winfo">
+                <p class="title">Sistema de control de precios para inventario</p>  
+                <p class="desc">La Agustina Polirubro - 2014 a 2017</p>
+                <div class="wlinks">
+                  <button class="btnL" data-bs-toggle="modal" data-bs-target="#mimgitem12"><i class="bx bx-link"></i></button>
+          </div></div></div></div>
         </div><!-- End Cuerpo -->
-
       </div><!-- End imgFilter -->
     </section><!-- End Portfolio -->
   </main><!-- End Main -->
+
+  <!-- TODO arreglar que no quede mucho texto continuo -->
+  <!-- ======= ELEMENTOS MODAL: imgFilter======= -->
+  <!-- Modal imgitem 1 - Ventana -->
+  <div class="modal fade" id="mimgitem1" tabindex="-1" aria-labelledby="servCard1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content sec-gral__modalcontend">
+        <div class="modal-header">
+          <h1 class="modal-title" id="servCard1">2022 a 2023 - Sistema de control Logistico Interno - Grupo Newsport</h1>
+          <div data-bs-theme="dark">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="programas my-3">
+            <img class="programas__i-logo100" src="../img/iconos/Excel.png" alt="icono Excel">
+            <img class="programas__i-logo100" src="../img/iconos/power_bi.png" alt="icono Power Bi">
+            <img class="programas__i-logo100" src="../img/iconos/google_sheets.png" alt="icono google sheets">
+            <img class="programas__i-logo100" src="../img/iconos/looker_studio.png" alt="icono Lokker Studio">
+          </div>
+          <p class="sec-gral__text"><span class="sec-gral__textstr">Esta es mi joya actual.</span> Es un grupo de planillas desarrolladas junto a la encargada del sector.</p>
+          <p class="sec-gral__text">Cuando me toco asistir a este sector, era una tarea tediosa que se hacía por mail. Tomamos la tarea y la llevavamos a planillas de Google Sheets donde conecté sus usuarios que interactúan continuamente con la misma y que la hicieron evolucionar hasta el punto actual, donde 15 meses después de su origen, por su complejidad ya es necesario su paso a un sistema.</p>
+          <p class="sec-gral__text">Consta de 1 tabla principal con 10 hojas, una tabla secundaria de 12 hojas y al menos 35 planillas auxiliares con 3, o más hojas, <span class="sec-gral__textstr">todas interrelacionadas</span>. 50 usuarios y aproximadamente 8 mil operaciones x mes.</p>
+          <p class="sec-gral__text">El proceso gestiona el pedido de artículos a los locales (aprox 30), que transfieren la mercadería al depósito central y luego se envía al cliente. Sistema “Crossdock”</p>
+          <p class="sec-gral__text">Entre sus valores agregados esta: control de pedidos de Mercado Libre, control de envíos de mercadería, retiros seguimiento de paquetes en sentido inverso, devoluciones, links de pago, control de fraude, lista roja, gestión de faltantes de stock, gestión de problemas de stock, cambios y post venta.</p>
+          <p class="sec-gral__textitl">Adicionalmente, sobre este grupo de planillas se originan informes en Looker y Power Bi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- End MODAL -->
 
   <!-- ======= Footer ======= -->
   <footer class="myfooter">

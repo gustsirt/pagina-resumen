@@ -26,12 +26,38 @@ a, a:hover {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 15px;
 }
-.programas__i-logo {
+.programas div {
+  margin: 15px;
+}
+.programas__i-logo100 {
   width: 100px;
 }
+.programas__i-logo150 {
+  width: 150px;
+}
 
+@media (max-width: 991px) {
+  .programas {
+    flex-wrap: wrap;
+  }
+  .programas__i-logo100 {
+    width: 80px;
+  }
+  .programas__i-logo150 {
+    width: 120px;
+  }
+}
+@media (max-width: 576px) {
+  .programas__i-logo100 {
+    width: 60px;
+  }
+  .programas__i-logo150 {
+    width: 90px;
+  }
+}
 /* Anchos
 --------------------------------------------------------------*/
 .w5 {
@@ -443,7 +469,6 @@ a, a:hover {
 .sec-gral__puntajes .base .title {
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -468,7 +493,7 @@ a, a:hover {
 }
 .sec-gral__modalcard .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 45px 20px 45px 20px;
   background: white;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.0823529412);
 }
@@ -657,14 +682,18 @@ a, a:hover {
   text-align: center;
   z-index: 4;
 }
-.imgFilter .imgitem__wrap .winfo .wlinks a {
+.imgFilter .imgitem__wrap .winfo .wlinks a, .imgFilter .imgitem__wrap .winfo .wlinks .btnL {
   color: #45505b;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
-.imgFilter .imgitem__wrap .winfo .wlinks a:hover {
+.imgFilter .imgitem__wrap .winfo .wlinks a:hover, .imgFilter .imgitem__wrap .winfo .wlinks .btnL:hover {
   color: #11f05f;
 }
 .imgFilter .imgitem__wrap .winfo::before {
@@ -677,6 +706,7 @@ a, a:hover {
   left: 35px;
   border-top: 3px solid #d7dce1;
   border-left: 3px solid #d7dce1;
+  border-radius: 10px 0 0 0;
   transition: all 0.5s;
   z-index: 9994;
 }
@@ -690,6 +720,7 @@ a, a:hover {
   right: 35px;
   border-bottom: 3px solid #d7dce1;
   border-right: 3px solid #d7dce1;
+  border-radius: 0 0 10px 0;
   transition: all 0.5s;
   z-index: 9994;
 }
@@ -781,6 +812,8 @@ a, a:hover {
 .cvitae__list {
   list-style-type: circle;
   list-style-position: inside;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 .cvitae__list::marker {
   color: #446f02;
@@ -890,10 +923,6 @@ a, a:hover {
   }
   .cvitae__item {
     line-height: 1.2;
-  }
-  .cvitae__list {
-    -webkit-padding-start: 0;
-            padding-inline-start: 0;
   }
   .cvitae__list-p {
     margin-bottom: 1rem;
