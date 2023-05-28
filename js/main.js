@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    // 2 - boton Active
+    // 2 - boton "Active" - le da un color distinto por clase
     // Mostrar TODOS como activo
     if (color === "todos") {
       ffiltros[0].classList.add('filter-active')
