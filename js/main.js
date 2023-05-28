@@ -1,3 +1,52 @@
+/* Filro de PortFolio
+--------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", function() {
+  var colorList = document.getElementById("imgFilter__filters"); 
+  var elementos = document.getElementsByClassName("elemento");
+  var ffiltros = document.getElementsByClassName("fltt");
+
+  // Manejar el evento de cambio de elección
+  colorList.addEventListener("click", function(event) {
+    var color = event.target.getAttribute("data-filter");
+    
+    // 1 - Filtro
+    // Mostrar todos los elementos cuando se selecciona "Todos"
+    if (color === "todos") {
+      for (var i = 0; i < elementos.length; i++) {
+        elementos[i].style.display = "block";
+      }
+    } else {
+      // Filtrar elementos por seleccion
+      for (var i = 0; i < elementos.length; i++) {
+        if (elementos[i].classList.contains(color)) {
+          elementos[i].style.display = "block";
+        } else {
+          elementos[i].style.display = "none";
+        }
+      }
+    }
+
+    // 2 - boton Active
+    // Mostrar TODOS como activo
+    if (color === "todos") {
+      ffiltros[0].classList.add('filter-active')
+      for (var i = 1; i < 4; i++) {
+        ffiltros[i].classList.remove('filter-active')
+      }
+    } else {
+      // Poner Active solo en el correspondiente
+      for (var i = 0; i < elementos.length; i++) {
+        if (ffiltros[i].classList.contains(color)) {
+          ffiltros[i].classList.add('filter-active')
+        } else {
+          ffiltros[i].classList.remove('filter-active')
+        }
+      }
+    }
+  });
+});
+
+
 /* Mobile nav toggle
 --------------------------------------------------------------*/
 
@@ -31,5 +80,3 @@ const typed = document.getElementById('typed')
     backSpeed: 50,
     backDelay: 2000
   });
-
-
