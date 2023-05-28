@@ -8,6 +8,10 @@
     font-family: "Poppins", sans-serif;
   }
 
+  & .pstr{
+    font-weight: bold;
+  }
+
   &__1ra-col{
     background-color: $c-blanco;
     padding: 1rem;
@@ -172,44 +176,44 @@
 
   .cvitae{
     margin: 2rem 0.5rem;
-  
+
     & * {
       font-family: "Poppins", sans-serif;
       font-size: 0.5rem;
     }
-  
+
     &__1ra-col{
       padding: 0.5rem;
     }
-  
+
     &__2da-col{
       padding: 0.5rem;
     }
-  
+
     &__foto{
       margin: 0.5rem auto;
     }
-  
+
     &__title1{
       font-size: 2rem;
     }
-  
+
     &__subtitle{
       font-size: 0.8rem;
     }
-  
+
     &__title2{
       font-size: 1rem;
     }
-    
+
     &__linea{
       margin: 0.7rem;
     }
-  
+
     &__linea--gruesa{
       margin-bottom: 1rem;
     }
-    
+
     &__p{
       font-size: 0.7rem;
       line-height: 1.2;
@@ -223,11 +227,16 @@
     &__item{
       line-height: 1.2;
     }
-    
+
+    &__list{
+      padding-inline-start: 0;
+    }
+
     &__list-p{
       margin-bottom: 1rem;
+      padding-inline-start: 0;
     }
-    
+
     &__item-p{
       font-size: 0.7rem;
       line-height: 1.2;

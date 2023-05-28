@@ -49,5 +49,9 @@
 
   &__copyright {
     margin: 0 0 5px 0;
+
+    & .pstr{
+      font-weight: bold;
+    }
   }
 }
