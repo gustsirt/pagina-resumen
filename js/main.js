@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Mostrar TODOS como activo
     if (color === "todos") {
       ffiltros[0].classList.add('filter-active')
-      for (var i = 1; i < 4; i++) {
+      for (var i = 1; i < ffiltros.length; i++) {
         ffiltros[i].classList.remove('filter-active')
       }
     } else {
       // Poner Active solo en el correspondiente
-      for (var i = 0; i < elementos.length; i++) {
+      for (var i = 0; i < ffiltros.length; i++) {
         if (ffiltros[i].classList.contains(color)) {
           ffiltros[i].classList.add('filter-active')
         } else {
@@ -74,7 +74,7 @@ mobileButton.addEventListener('click', accionmobile )
 --------------------------------------------------------------*/
 const typed = document.getElementById('typed')
   new Typed(typed, {
-    strings: ["Analista", "Desarrollador", "Freelancer"],
+    strings: ["Analista de Datos", "Desarrollador", "Freelancer"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 50,

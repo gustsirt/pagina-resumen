@@ -301,7 +301,7 @@
       overflow: hidden;
       z-index: 1;
 
-      // oculto
+      // oculto - tiene modificacion temporal
       &::before {
         content: "";
         background: $c-blancor-70;
@@ -311,7 +311,8 @@
         top: 30px;
         bottom: 30px;
         z-index: 2;
-        opacity: 0;
+        transition: all 0.5s;
+        opacity: 1; // estaba en 0
       }
 
       // activa el before
@@ -323,9 +324,9 @@
         opacity: 1;
       }
 
-      // oculto
+      // oculto - tiene modificacion temporal
       & .winfo {
-        opacity: 0;//-----
+        opacity: 1;//0-----
         position: absolute;
         top: 0;
         left: 0;
@@ -395,19 +396,24 @@
         z-index: 9994;
       }
 
-      // activa el winfo
+      // activa el winfo - tiene modificacion temporal
       &:hover .winfo {
         opacity: 1;
+        color: $copcn; // es temporal no va
       }
 
-      // por animacion
+      // por animacion - tiene modificacion temporal
       &:hover .winfo::before {
         top: 15px;
         left: 15px;
+        border-top: 3px solid $copcn; // es temporal no va
+        border-left: 3px solid $copcn; // es temporal no va
       }
       &:hover .winfo::after {
         bottom: 15px;
         right: 15px;
+        border-bottom: 3px solid $copcn; // es temporal no va
+        border-right: 3px solid $copcn; // es temporal no va
       }
     }
   }

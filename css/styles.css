@@ -602,7 +602,8 @@ a, a:hover {
   top: 30px;
   bottom: 30px;
   z-index: 2;
-  opacity: 0;
+  transition: all 0.5s;
+  opacity: 1;
 }
 .imgFilter .imgitem__wrap:hover::before {
   top: 0;
@@ -612,7 +613,7 @@ a, a:hover {
   opacity: 1;
 }
 .imgFilter .imgitem__wrap .winfo {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -680,14 +681,19 @@ a, a:hover {
 }
 .imgFilter .imgitem__wrap:hover .winfo {
   opacity: 1;
+  color: #446f02;
 }
 .imgFilter .imgitem__wrap:hover .winfo::before {
   top: 15px;
   left: 15px;
+  border-top: 3px solid #446f02;
+  border-left: 3px solid #446f02;
 }
 .imgFilter .imgitem__wrap:hover .winfo::after {
   bottom: 15px;
   right: 15px;
+  border-bottom: 3px solid #446f02;
+  border-right: 3px solid #446f02;
 }
 
 /* Galeria Imagenes Detalles = imgDetail
