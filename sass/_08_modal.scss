@@ -1,0 +1,309 @@
+/* Modal Card - Servicios
+--------------------------------------------------- */
+
+  // tarjeta conboton modal
+.modalcard{
+  margin-top: 1.5rem;
+
+  & .icon-box {
+    text-align: center;
+    padding: 45px 20px 45px 20px;
+    background: $c-blancor;
+    box-shadow: 0px 5px 90px 0px #6e7b8315;
+
+    & .icon {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        & path {
+          fill: #f5f5f5;
+        }
+      }
+
+      & i {
+        font-size: 2rem;
+        position: relative;
+        color: $copcn;
+      }
+
+    }
+
+    & .ctitle {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 10px 0 15px 0;
+      font-size: 1.5rem;
+      color: $c-gris1;
+    }
+
+    & .ctext {
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      border-color: $c-blancor;
+      box-shadow: 0px 0 35px 0 #0000002c;
+
+      & .icon path {
+        fill: $copcn;
+      }
+
+      & i {
+        color: $c-blancor;
+      }
+    }
+  }
+}
+
+
+/* Galeria Imagenes Filtrada = xFilter
+--------------------------------------------------------------*/
+.xFilter{
+  // Cabezera
+  & #xFilter__filters{
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style-type: none;
+    text-align: center;
+    background: $c-blancor;
+    border-radius: 50px;
+    padding: 2px 15px;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $copcn;
+      border-radius: 10px ;
+      margin-bottom: 1rem;
+
+      &:hover, &.filter-active {
+        color: $c-blanco;
+        background-color: $copcn;
+      }
+    }
+  }
+
+  // Cuerpo
+  & .imgitem {
+    margin-bottom: 30px;
+
+    &__wrap {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      // oculto - tiene modificacion temporal
+      &::before {
+        content: "";
+        background: $c-blancor-70;
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 30px;
+        bottom: 30px;
+        z-index: 2;
+        transition: all 0.5s;
+        opacity: 1; // estaba en 0
+      }
+
+      // activa el before
+      &:hover::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+      }
+
+      // oculto - tiene modificacion temporal
+      & .winfo {
+        opacity: 1;//0-----
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .title{
+          font-family: "Raleway", sans-serif;
+          font-size: 20px;
+          color: $c-gris1;
+          font-weight: 600;
+        }
+        & .desc {
+          color: $c-gris1;
+          font-size: 14px;
+          text-transform: uppercase;
+          padding: 0;
+          margin: 0;
+        }
+        & .wlinks {
+          text-align: center;
+          z-index: 4;
+    
+          & a, .btnL {
+            color: $c-gris1;
+            margin: 0 2px;
+            font-size: 28px;
+            display: inline-block;
+            transition: 0.3s;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+    
+            &:hover {
+              color: $color;
+            }
+          }
+        }
+      }
+      & .winfo::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        border-top: 3px solid #d7dce1;
+        border-left: 3px solid #d7dce1;
+        border-radius: 10px 0 0 0;
+        transition: all 0.5s;
+        z-index: 9994;
+      }
+      & .winfo::after {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        border-bottom: 3px solid #d7dce1;
+        border-right: 3px solid #d7dce1;
+        border-radius: 0 0 10px 0;
+        transition: all 0.5s;
+        z-index: 9994;
+      }
+
+      // activa el winfo - tiene modificacion temporal
+      &:hover .winfo {
+        opacity: 1;
+        color: $copcn; // es temporal no va
+      }
+
+      // por animacion - tiene modificacion temporal
+      &:hover .winfo::before {
+        top: 15px;
+        left: 15px;
+        border-top: 3px solid $copcn; // es temporal no va
+        border-left: 3px solid $copcn; // es temporal no va
+      }
+      &:hover .winfo::after {
+        bottom: 15px;
+        right: 15px;
+        border-bottom: 3px solid $copcn; // es temporal no va
+        border-right: 3px solid $copcn; // es temporal no va
+      }
+    }
+  }
+  
+}
+
+/* Ventanas MODAAL
+--------------------------------------------------------------*/
+.modalcontend {
+  background-color: $c-gris2;
+
+  & .modal-header {
+    background-color: $copcn;
+    color: $c-blanco;
+
+    & .mtitle  {
+      font-family: "Raleway", sans-serif;
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  & .modal-body {
+    & .float__img {
+      float: left;
+      width: 250px;
+      margin: 10px;
+    }
+
+    & li {
+      align-items:first baseline;
+    }
+
+    & .txt {
+      @extend .sec-gral__text;
+    }
+
+    & .txtstr {
+      @extend .sec-gral__textstr;
+    }
+
+    & .txtitl {
+      @extend .sec-gral__textitl;
+    }
+
+    & .txtref {
+      @extend .sec-gral__textref;
+    }
+  }
+
+  & .modal-footer{
+    background-color: $copcn;
+    color: $c-blanco;
+    justify-content: right;
+
+    & p {
+      font-family: "Raleway", sans-serif; 
+    }
+
+    &  a {
+      font-size: 1rem;
+      color: $c-blanco;
+      margin-right: 20px;
+
+      &:hover {
+        color: $c-blanco;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modalcontend {
+    & .modal-header {
+      & div {
+        margin-right: 30px;
+      }
+    }
+  }
+}

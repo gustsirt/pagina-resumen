@@ -1,0 +1,159 @@
+/* Seccion Vertical
+--------------------------------------------------------------*/
+.sec-gral{
+  padding-top: 0;
+
+  &__linea{
+    margin: 2.5rem 0;
+  }
+
+  &__title{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $c-gris1;
+  }
+
+  & h1 {
+    margin-top: 2.5rem;
+  }
+
+  &__hr-title{
+    height: 1px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid $cstrg;
+  }
+
+  &__subtitle{
+    color: $copcn;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__subtitle--exp{
+    color: $copcn;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  &__foto{
+      width: 100%;
+      justify-self: center;
+      border-radius: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  &__textstr{
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  &__textitl{
+    font-style: italic;
+    color: $cstrg;
+  }
+
+  &__textref{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+    color: $cstrg;
+  }
+
+  &__ul {
+  list-style-type: none;
+  & li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    & span{
+      padding: 0 1rem;
+    }
+  }
+  & i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: $copcn;
+  }
+  }
+
+  // puntajes = progres bar completo
+  &__puntajes{
+    margin-bottom: 3rem;
+
+    & .base {
+      height: 60px;
+      display: block;
+      background: none;
+      width: 40%;
+
+      & .title{
+        display: flex;
+        justify-content: space-between;
+        //text-transform: uppercase;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+
+        & .skill, .val {
+          padding: 0.4rem 0;
+          margin: 0;
+          display: block;
+          color: $c-gris1;
+        }
+      }
+
+      & .progress {
+        height: 10px;
+        border-radius: 0;
+        background: $c-gris2;
+
+        & .progress-bar{
+          width: 1px;
+          transition: 0.9s;
+          background-color: $copcn;
+        }
+      }
+      
+    }
+
+  }
+}
+
+@media (max-width: 991px){
+  .sec-gral__foto{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+
+  .sec-gral{
+    &__ul{
+      padding-left: 1rem;
+    }
+
+    &__foto{
+      margin-bottom: 1rem;
+    }
+
+    &__puntajes{
+      & .base {
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
