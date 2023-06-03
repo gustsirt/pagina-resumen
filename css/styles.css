@@ -10,12 +10,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-
-h1, h2, h3, h4, h5, h6 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Raleway", sans-serif;
 }
-
-a, a:hover {
+body a, body a:hover {
   color: #446f02;
   text-decoration: none;
 }

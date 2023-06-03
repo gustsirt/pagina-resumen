@@ -1,13 +1,14 @@
 /* Clase Elemento -> PortFolio
 --------------------------------------------------------------*/
 class EPortfolio {
-  constructor (elemento, title, imagen, alt, clases) {
+  constructor (elemento, title, imagen, alt, clases, estrella) {
     this.elemento = elemento
     this.title = title
     this.imagen = imagen
     this.alt = alt
     this.desc = []
     this.clases = clases
+    this.estrella = estrella
   }
 }
 
@@ -15,79 +16,84 @@ let elePortf = [];
 
 let xNwPicking = new EPortfolio (
   "14","Sistema de control Logistico Interno - Picking",
-  "../img/fondos/picking.jpg","inventario","fsheet flooker fpbi")
+  "../img/fondos/picking.jpg","inventario","fsheet flooker fpbi festrella","<i class='bx bxs-star'></i>")
   xNwPicking.desc.push({ empresa: 'Grupo Newsport', año: '2022 a 2023'})
   
 let xPagaresV2 = new EPortfolio (
   "13","Pagares autonumerados V2",
-  "../img/fondos/tarea-completa.jpg","papeles pagare","fhtml fjs")
+  "../img/fondos/tarea-completa.jpg","papeles pagare","fhtml fjs","")
   xPagaresV2.desc.push({ empresa: 'Nuevo Ceibo', año: '2023'})
+
+let xNwFraude = new EPortfolio (
+  "15","Tabla soporte para Control de Fraude",
+  "../img/fondos/control-fraude.jpg","icontrol de fraude","fsheet festrella","<i class='bx bxs-star'></i>")
+  xNwPicking.desc.push({ empresa: 'Grupo Newsport', año: '2021 a 2023'})
 
 let xNwLSueldo = new EPortfolio (
   "12","Corrector para presentación libro Sueldos AFIP",
-  "../img/fondos/impuestos.jpg","aplicación de impuestos","fexcel")
+  "../img/fondos/impuestos.jpg","aplicación de impuestos","fexcel","")
   xNwLSueldo.desc.push({ empresa: 'Grupo Newsport', año: '2022 a 2023'})
 
 let xIdGraf = new EPortfolio (
   "11","Planilla para control de producción y genera remitos",
-  "../img/fondos/cosas-para-hacer.jpg","cosas para hacer","fexcel")
+  "../img/fondos/cosas-para-hacer.jpg","cosas para hacer","fexcel","")
   xIdGraf.desc.push({ empresa: 'Idearte S.A.', año: '2023'})
 
 let xNwCamiones = new EPortfolio (
   "10","Cuaderno de ingreso de camiones",
-  "../img/fondos/camion-proveedores.jpg","camiones descargando mercaderia","fsheet flooker")
+  "../img/fondos/camion-proveedores.jpg","camiones descargando mercaderia","fsheet flooker","")
   xNwCamiones.desc.push({ empresa: 'Grupo Newsport', año: '2023'})
 
 let xNwCompra1 = new EPortfolio (
   "9","Solicitud de mercaderia por Eventos",
-  "../img/fondos/item1.jpg","item temporal 1","fexcel")
+  "../img/fondos/preparacion-de-evento.jpg","preparacion de evento","fexcel","")
   xNwCompra1.desc.push({ empresa: 'Grupo Newsport', año: '2023'})
 
 let xSiapCompras = new EPortfolio (
   "8","Correcion masiva sistema AFIP - SIAP - Control de IVA",
-  "../img/fondos/item2.jpg","item temporal 2","fexcel")
+  "../img/fondos/impuestos.jpg","aplicación de impuestos","fexcel","")
   xSiapCompras.desc.push(
     { empresa: 'Grupo Newsport', año: '2023'},
     { empresa: 'MAC Group', año: '2018 a 2020'})
 
 let xNwTarjetas = new EPortfolio (
   "7","Sistema de Conciliacion masiva de operaciones de Tarjetas",
-  "../img/fondos/item2.jpg","item temporal 2","fexcel faccess")
+  "../img/fondos/rendimiento-tarjetas.jpg","rendimiento tarjetas","fexcel faccess festrella","<i class='bx bxs-star'></i>")
   xNwTarjetas.desc.push({ empresa: 'Grupo Newsport', año: '2020 a 2023'})
 
 let xPagaresV = new EPortfolio (
   "6","Pagares autonumerados",
-  "../img/fondos/item1.jpg","item temporal 1","fexcel")
+  "../img/fondos/tarea-completa.jpg","papeles pagare","fexcel","")
   xPagaresV.desc.push(
     { empresa: 'El Nuevo Ceibo S.A.', año: '2019 a 2023' },
     { empresa: 'Plan x5 S.A.', año: '2022 a 2023' });
 
 let xNcCobros = new EPortfolio (
   "5","Seguimiento de Cobros",
-  "../img/fondos/item5.jpg","item temporal 5","fexcel")
+  "../img/fondos/cobros.jpg","imagen cobrando","fsheet","")
   xNcCobros.desc.push({ empresa: 'El Nuevo Ceibo S.A.', año: '2019 a 2023' });
 
 let xMgCajas = new EPortfolio (
   "4","Planillas de Cajas adaptadas para su Conciliacion masiva",
-  "../img/fondos/item1.jpg","item temporal 4","fexcel")
+  "../img/fondos/caja-diaria.jpg","Caja Diaria","fexcel","")
   xMgCajas.desc.push({ empresa: 'MAC Group', año: '2019 a 2021' });
 
 let xAfipIIBB = new EPortfolio (
   "3","Soporte para conciliación de IIBB y declaración en la AFIP",
-  "../img/fondos/item3.jpg","item temporal 3","fexcel")
+  "../img/fondos/impuestos.jpg","aplicación de impuestos","fexcel","")
   xAfipIIBB.desc.push({ empresa: 'MAC Group', año: '2019 a 2021' });
 
 let xMgFact = new EPortfolio (
   "2","Planillas para importación masiva de Facturas de compra",
-  "../img/fondos/item2.jpg","item temporal 2","fexcel")
+  "../img/fondos/archivo.jpg","archivo de papeles","fexcel","")
   xMgFact.desc.push({ empresa: 'MAC Group', año: '2017 a 2021' })
 
 let xLaPrecios = new EPortfolio (
   "1","Sistema de control de precios para inventario",
-  "../img/fondos/item1.jpg","item temporal 1","fexcel")
+  "../img/fondos/picking.jpg","Conrol de inventario","fexcel","")
   xLaPrecios.desc.push({ empresa: 'MAC Group', año: '2014 a 2017<' })
 
-elePortf.push(xNwPicking, xPagaresV2, xNwLSueldo, xIdGraf, xNwCamiones,xNwCompra1,xSiapCompras, xNwTarjetas, xPagaresV, xNcCobros,xMgCajas, xAfipIIBB, xMgFact, xLaPrecios)
+elePortf.push(xNwPicking, xPagaresV2, xNwFraude, xNwLSueldo, xIdGraf, xNwCamiones,xNwCompra1,xSiapCompras, xNwTarjetas, xPagaresV, xNcCobros,xMgCajas, xAfipIIBB, xMgFact, xLaPrecios)
 
 // agregar elementos al al html
 const xFiltercontainer = document.getElementById("xFilter__container")
@@ -107,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
     let tarjetitas3 =
         `<div class="wlinks">
-          <button class="btnL" data-bs-toggle="modal" data-bs-target="#mFilter${elementox.elemento}"><i class="bx bx-link"></i></button>
+          <button class="btnL" data-bs-toggle="modal" data-bs-target="#mFilter${elementox.elemento}">${elementox.estrella}<i class="bx bx-link">${elementox.estrella}</i></button>
   </div></div></div></div>`
 
   xFiltercontainer.innerHTML+= (tarjetitas1 + tarjetitas2 + tarjetitas3)
