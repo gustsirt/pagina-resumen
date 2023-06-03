@@ -69,10 +69,21 @@ $programas-l: 150px;
 
 .programas{
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
   gap: 15px;
+
+  &--horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+
+  &--vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
   & div {
     margin: 15px;

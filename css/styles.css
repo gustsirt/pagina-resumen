@@ -22,10 +22,19 @@ body a, body a:hover {
 --------------------------------------------------------------*/
 .programas {
   width: 100%;
+  gap: 15px;
+}
+.programas--horizontal {
   display: flex;
   justify-content: space-evenly;
+  align-content: center;
   flex-wrap: nowrap;
-  gap: 15px;
+}
+.programas--vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .programas div {
   margin: 15px;
