@@ -113,10 +113,10 @@
         content: "";
         background: $c-blancor-70;
         position: absolute;
-        left: 30px;
-        right: 30px;
-        top: 30px;
-        bottom: 30px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
         z-index: 2;
         transition: all 0.5s;
         opacity: 1; // estaba en 0
@@ -293,6 +293,34 @@
 
       &:hover {
         color: $c-blanco;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .xFilter {
+    & .imgitem {
+      &__wrap::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+      }
+
+      & .winfo::before {
+        top: 15px;
+        left: 15px;
+        border-top: 3px solid $copcn; // es temporal no va
+        border-left: 3px solid $copcn; // es temporal no va
+      }
+
+      & .winfo::after {
+        bottom: 15px;
+        right: 15px;
+        border-bottom: 3px solid $copcn; // es temporal no va
+        border-right: 3px solid $copcn; // es temporal no va
       }
     }
   }

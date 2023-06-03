@@ -792,10 +792,10 @@ body a, body a:hover {
   content: "";
   background: rgba(255, 255, 255, 0.7019607843);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
   z-index: 2;
   transition: all 0.5s;
   opacity: 1;
@@ -936,6 +936,27 @@ body a, body a:hover {
   color: #d9d9d9;
 }
 
+@media (max-width: 991px) {
+  .xFilter .imgitem__wrap::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  .xFilter .imgitem .winfo::before {
+    top: 15px;
+    left: 15px;
+    border-top: 3px solid #446f02;
+    border-left: 3px solid #446f02;
+  }
+  .xFilter .imgitem .winfo::after {
+    bottom: 15px;
+    right: 15px;
+    border-bottom: 3px solid #446f02;
+    border-right: 3px solid #446f02;
+  }
+}
 @media (max-width: 576px) {
   .modalcontend .modal-header div {
     margin-right: 30px;
