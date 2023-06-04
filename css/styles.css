@@ -40,10 +40,10 @@ body a, body a:hover {
   margin: 15px;
 }
 .programas__i-logo100 {
-  width: 100px;
+  max-width: 100px;
 }
 .programas__i-logo150 {
-  width: 150px;
+  max-width: 150px;
 }
 
 @media (max-width: 991px) {
@@ -51,18 +51,18 @@ body a, body a:hover {
     flex-wrap: wrap;
   }
   .programas__i-logo100 {
-    width: 80px;
+    max-width: 80px;
   }
   .programas__i-logo150 {
-    width: 120px;
+    max-width: 120px;
   }
 }
 @media (max-width: 576px) {
   .programas__i-logo100 {
-    width: 60px;
+    max-width: 60px;
   }
   .programas__i-logo150 {
-    width: 90px;
+    max-width: 90px;
   }
 }
 /* Anchos
@@ -438,6 +438,7 @@ body a, body a:hover {
 }
 .sec-gral__textitl, .modalcontend .modal-body .txtitl {
   font-style: italic;
+  text-align: justify;
   color: #335203;
 }
 .sec-gral__textref, .modalcontend .modal-body .txtref {

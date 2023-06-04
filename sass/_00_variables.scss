@@ -88,20 +88,20 @@ $programas-l: 150px;
   & div {
     margin: 15px;
   }
-  &__i-logo100{ width: $programas-m;}
-  &__i-logo150{ width: $programas-l;}
+  &__i-logo100{ max-width:  $programas-m;}
+  &__i-logo150{ max-width:  $programas-l;}
 }
 @media (max-width: 991px){
   .programas {
     flex-wrap: wrap;
-    &__i-logo100{ width: $programas-m*0.80;}
-    &__i-logo150{ width: $programas-l*0.80;}
+    &__i-logo100{ max-width: $programas-m*0.80;}
+    &__i-logo150{ max-width:  $programas-l*0.80;}
   }
 }
 @media (max-width: 576px){
   .programas {
-    &__i-logo100{ width: $programas-m*0.60;}
-    &__i-logo150{ width: $programas-l*0.60;}
+    &__i-logo100{ max-width:  $programas-m*0.60;}
+    &__i-logo150{ max-width:  $programas-l*0.60;}
   }
 }
 /* Anchos
