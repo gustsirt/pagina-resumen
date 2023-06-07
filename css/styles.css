@@ -392,6 +392,7 @@ body a, body a:hover {
 }
 .sec-gral__linea {
   margin: 2.5rem 0;
+  align-items: stretch;
 }
 .sec-gral__title {
   padding: 1rem;
@@ -460,6 +461,9 @@ body a, body a:hover {
 .sec-gral__ul li span {
   padding: 0 1rem;
 }
+.sec-gral__ul .breack {
+  line-break: anywhere;
+}
 .sec-gral__ul i {
   font-size: 1rem;
   margin-right: 0.5rem;
@@ -525,6 +529,7 @@ body a, body a:hover {
 }
 .cvitae .pstr {
   font-weight: bold;
+  text-align: justify;
 }
 .cvitae__1ra-col {
   background-color: #d9d9d9;
@@ -575,6 +580,7 @@ body a, body a:hover {
 .cvitae__p {
   line-height: 1.3;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 .cvitae__link {
   color: #446f02;
@@ -598,10 +604,12 @@ body a, body a:hover {
 .cvitae__list-p {
   list-style-type: none;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .cvitae__item-p {
   font-size: 1.2rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 @media (max-width: 991px) {
@@ -679,7 +687,7 @@ body a, body a:hover {
     font-size: 0.8rem;
   }
   .cvitae__title2 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .cvitae__linea {
     margin: 0.7rem;
@@ -707,6 +715,9 @@ body a, body a:hover {
     font-size: 0.7rem;
     line-height: 1.2;
   }
+  .cvitae .pstr {
+    font-size: 0.7rem;
+  }
 }
 /* Modal Card - Servicios
 --------------------------------------------------- */
@@ -714,6 +725,7 @@ body a, body a:hover {
   margin-top: 1.5rem;
 }
 .modalcard .icon-box {
+  height: 100%;
   text-align: center;
   padding: 45px 20px 45px 20px;
   background: white;
