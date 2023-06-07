@@ -6,6 +6,9 @@
 @page:top-left {
   display: none;
 }
+.sec-gral{
+  display: none;
+}
 
 .myheader, #mobile-button, .myfooter{
     display: none;
